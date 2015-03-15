@@ -15,4 +15,8 @@ Vagrant.configure(2) do |config|
   config.vm.network "private_network", ip: "192.168.33.10", auto_config: false
 
   config.vm.synced_folder ".", "/app"
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 1024
+  end
 end

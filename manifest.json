@@ -1,35 +1,32 @@
 {
-    "name": "YunoHost example app",
-    "id": "ynhexample",
+    "name": "Ez Publish",
+    "id": "ezpublish",
     "description": {
         "en": "Example package for Yunohost applications."
-    },
-    "licence": "GPL-2",
-    "developer": {
-        "name": "John doe",
-        "email": "john.doe@example.com",
-        "url": "http://example.com"
     },
     "multi_instance": "false",
     "arguments": {
         "install" : [
             {
                 "name": "domain",
+                "type": "domain",
                 "ask": {
-                    "en": "Choose a domain for ynhexample"
+                    "en": "Choose a domain for ezPublish"
                 },
-                "example": "example.com"
+                "example": "domain.org"
             },
             {
                 "name": "path",
+                "type": "path",
                 "ask": {
-                    "en": "Choose a path for ynhexample"
+                    "en": "Choose a path for ezpublish"
                 },
-                "example": "/example",
-                "default": "/example"
+                "example": "/ezpublish",
+                "default": "/ezpublish"
             },
             {
                 "name": "admin",
+                "type": "user",
                 "ask": {
                     "en": "Choose an admin user"
                 },
